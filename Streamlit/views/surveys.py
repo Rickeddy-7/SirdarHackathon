@@ -113,6 +113,7 @@ def survey_form(survey_name, questions):
 
     # Initialize responses dictionary
     responses = {}
+    # questions = list(set(questions))
 
     # Survey questions
     with st.form(f"{survey_name.lower()}_form"):
