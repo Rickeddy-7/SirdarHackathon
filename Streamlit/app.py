@@ -1,7 +1,7 @@
 # streamlit_app/app.py
 
 import streamlit as st
-from views import home, analytics, reports  # Import your different views
+from views import surveys, dashboard, reports  # Import your different views
 
 def main():
     st.markdown(
@@ -15,9 +15,9 @@ def main():
 
     # Display the selected page
     if selected_page == "Executive Surevy":
-        home.show()
+        surveys.show()
     elif selected_page == "Board Composition Dashboard":
-        analytics.show()
+        dashboard.show()
     elif selected_page == "Governace Diagnostic Report":
         reports.show()
 

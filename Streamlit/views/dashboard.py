@@ -1,4 +1,4 @@
-# streamlit_app/views/analytics.py
+# streamlit_app/views/dashboard.py
 
 import streamlit as st
 
