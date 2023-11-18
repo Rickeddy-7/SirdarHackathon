@@ -1,4 +1,3 @@
-# streamlit_app/views/home.py
 
 import streamlit as st
 
