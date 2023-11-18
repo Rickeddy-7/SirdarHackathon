@@ -119,10 +119,14 @@ def survey_form(survey_name, questions):
         st.write(f"Welcome to {survey_name}! Please provide your feedback.")
 
         # Loop through each question and collect responses
-        for i, question in enumerate(questions, start=1):
-            st.header(f"Question {i}:")
-            response = st.slider(question, 0, 4)
-            responses[f"Question {i}"] = response
+        # for i, question in enumerate(questions, start=1):
+        #     st.header(f"Question {i}:")
+        #     response = st.slider(question, 0, 4)
+        #     responses[f"Question {i}"] = response
+
+        for question in questions:
+            response = st.slider(question, 0,4)
+            responses[question] = response
 
         # Submit button
         submitted = st.form_submit_button("Submit Survey")
